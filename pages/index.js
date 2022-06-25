@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Head from "next/head"
 
 import Editor from "@monaco-editor/react";
 
@@ -24,6 +25,9 @@ export default function App() {
 
   return (
     <div className="App">
+      <Head>
+        <title>CSS Bookmarklet</title>
+      </Head>
       <div className="left half">
         <input value={name} onChange={e => setName(e.target.value)} className="name-input" placeholder="Enter bookmarklet name"></input>
         <div className="editor-container">
