@@ -32,6 +32,11 @@ export default function App() {
         <input value={name} onChange={e => setName(e.target.value)} className="name-input" placeholder="Enter bookmarklet name"></input>
         <div className="editor-container">
           <Editor
+            options={{
+              minimap: {
+                enabled: false,
+              },
+            }}
             className="editor"
             defaultLanguage="css"
             defaultValue={``}
@@ -43,7 +48,7 @@ export default function App() {
         <div className="right-container">
           <p>Drag to bookmark bar</p>
           <div className="bookmarklet">
-            <a href={bookMarklet(code)}>{name}</a>
+            {name.trim() ? <a href={bookMarklet(code)}>{name}</a> : <a disabled className="empty">enter name</a>} 
           </div>
           <button onClick={handleCopy}>{buttonText}</button>
         </div>

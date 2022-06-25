@@ -105,6 +105,11 @@ button:active {
   border-color: gray;
 }
 
+.empty {
+  color: rgb(247, 122, 143) !important;
+  cursor: not-allowed;
+}
+
 @media(max-width: 600px) {
   .half {
     width: 100vw;
