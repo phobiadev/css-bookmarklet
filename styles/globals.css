@@ -49,7 +49,7 @@ a {
 
 .editor-container {
   width: 40vw;
-  height: 75vh; 
+  height: 75vh;
   border: 5px solid rgb(216, 215, 215);
   padding: 20px;
   border-radius: 3px;
@@ -57,7 +57,7 @@ a {
 
 .editor {
   width: 40vw;
-  height: 75vh;
+  height: 70vh;
 }
 
 .name-input {
@@ -122,12 +122,13 @@ button:active {
 
   .editor {
     width: 90vw;
-    height: 35vh;
+    height: 30vh;
     font-size: .6rem;
   }
 
   .editor-container {
     width: 90vw;
+    height: 35vh;
     padding: 0;
     margin-bottom: 10px;
   }
